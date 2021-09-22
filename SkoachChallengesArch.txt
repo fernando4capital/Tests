@@ -1,0 +1,66 @@
+# Architecture challenge
+-------------------------
+A clothing store, Lappos, is using an invoicing software, Libervoice, with inventory management capabilities for their 3 stores in Liberland. 
+
+They want to bring their business online and have chosen Ifyshop as their platform.
+ 
+Ifyshop has its own inventory management capabilities, a full-fledged REST API for all resources,
+with webhooks on product updates and new orders and the ability to capture payments, 
+
+but, unfortunately, it cannot issue invoices that are legally recognized in Liberland.
+ 
+Libervoice can do this, so Lappos will keep using the software for their physical stores, 
+and to invoice purchases online. 
+
+However, Libervoice's API is fairly lacking;
+
+it exposes only an endpoint for listing orders and products (with inventory), with pagination,
+but no search, and another for creating invoices, but definitely no webhooks.
+ 
+You're hired by Lappos to integrate these two systems and ensure that they can still sell their wares in their stores, 
+but also online with legal invoicing, and while keeping the inventory in both systems synchronized.
+ 
+Describe, in words, how you would tackle this problem. Consider:
+ 
+1. Infrastructure costs, if any 
+1.1 - Costs of Infraestucture will depend of the Lappos actual infraestructure that is not defined in the context, 
+  so we will need a deeper analysis, the proposed scenario is not enough to a decision.  
+  What is the budget? ( an Pre-sales approach could find this number).
+      
+2. Edge cases
+  What kind of Database is runing the Store #1, #2 and #3 ?
+  Is it possible to create a Data ETL Orchestration with this database?
+  Is it possible to change the connection of the Ifyshop to read and write information and obey the Data ETL Orchestration?
+  Is it better to create a Redirection of information using a new API layers instead of a Database layer?
+  Is it possible to the Libervoice read information from a Data ETL Orchestestration or a soft-Datawarehouse?
+  
+3. Tradeoffs in implementation and why you took them
+  The limitation of the layers (API/WEB/Data) will define the best appoach.
+  The less interference in the 3rd part systems better. I prefer to create a layer of Business talking or Workflow Orchestration and keep their legacy intact.
+     
+DIAGRAM TO FUTURE DISCUSSIONS:
+https://github.com/fernando4capital/tests/blob/main/SkoachChallenge.drawio.pdf
+     
+     
+# And a few questions
+1. If you could work for any company in the world, which one would you choose? Why aren't you working there now?
+I never thinked in bases of a company. I always look the challenges that I'll face and the return of payment for my time.
+I had the opportunity of work in the biggest players and in startups, so that's not a filter to my choices.
+
+2. When was the last time you changed your mind about something important? What triggered that change?
+I'm a strategist by nature. I never do anything without have a plan of how get inside, and how to get outside of any situation or place.
+After I take a decision, I don't have changes of mind, I basically obey my risk management with my "profit realization" vs "stop-loss" points, that 
+will for sure be defined in another step of my plan.
+
+3. Tell me about a time when you screwed up or made a mistake. How did you fix it and what did you learn?
+Normally my mistakes are connected with trusting someone that is not totally involved in the same goal or mindset.
+I did fix my mistakes using different tools to show EXACTLY what I have in mind, and also being very open of what is on my mind, and are my goals.
+
+4. Among the people you've worked with, who do you admire and why?
+- Melinda Fench Gates and Elena Cardone are two of the persons that I had an oppotunity to work with, and they both have the vision of 
+how to build an Empire. The way they deal with people, creating a "tribe", where people look them with admiration is something of another level.
+ 
+Thank you so much João.
+
+Success,
+Fernando.
