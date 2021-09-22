@@ -1,0 +1,24 @@
+Test result for: justifyText/main.py
+
+Running Test to the Example 1:
+------------------------------
+This    is    an
+example  of text
+  justification.
+
+Running Test to the Example 2:
+------------------------------
+What   must   be
+  acknowledgment  
+        shall be
+
+Running Test to the Example 3:
+------------------------------
+Science  is  what we
+understand      well
+enough to explain to
+a  computer.  Art is
+everything  else  we
+                  do
+
+Process finished with exit code 0
