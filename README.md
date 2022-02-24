@@ -1,5 +1,5 @@
 # Tests
-tests, algorithms, and more
+tests, algorithms, and more, basically a place where I mess around :) 
 
 # Skoach Challenge
 
